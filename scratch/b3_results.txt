@@ -1,0 +1,4 @@
+--- B3_LIST ---
+RPS: 280.03, Mean Latency: 156.80 ms
+--- B3_HASH ---
+RPS: 288.82, Mean Latency: 101.62 ms

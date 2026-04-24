@@ -1,0 +1,17 @@
+# Compiled binaries
+proxy
+proxy_mutex
+*.o
+
+# Log files (too large)
+*.log
+proxy_b3.log
+proxy_fresh.log
+proxy_clean.log
+proxy_b4.log
+proxy_b4_noprot.log
+proxy_b4_prot.log
+
+# Backup files
+*.bak
+*.tmp

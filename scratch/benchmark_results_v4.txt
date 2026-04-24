@@ -1,0 +1,176 @@
+
+--- B2_MUTEX_LOCAL ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     8.522 s
+Requests/sec:   234.70
+Mean Latency:   0.00 ms
+Min Latency:    0.00 ms
+Max Latency:    0.00 ms
+Failed Requests: 2000
+Errors:         {"500": 1993, "ProxyError": 7}
+
+--- B2_RWLOCK_LOCAL ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     7.816 s
+Requests/sec:   255.88
+Mean Latency:   0.00 ms
+Min Latency:    0.00 ms
+Max Latency:    0.00 ms
+Failed Requests: 2000
+Errors:         {"500": 1995, "ProxyError": 5}
+
+--- B3_LIST_LOCAL ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     4.620 s
+Requests/sec:   216.44
+Mean Latency:   0.00 ms
+Min Latency:    0.00 ms
+Max Latency:    0.00 ms
+Failed Requests: 1000
+Errors:         {"500": 1000}
+
+--- B3_HASH_LOCAL ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     4.723 s
+Requests/sec:   211.72
+Mean Latency:   0.00 ms
+Min Latency:    0.00 ms
+Max Latency:    0.00 ms
+Failed Requests: 1000
+Errors:         {"500": 1000}
+
+--- B2_MUTEX_LOCAL ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     9.525 s
+Requests/sec:   209.96
+Mean Latency:   1102.72 ms
+Min Latency:    42.46 ms
+Max Latency:    2100.14 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_RWLOCK_LOCAL ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     9.271 s
+Requests/sec:   215.74
+Mean Latency:   899.90 ms
+Min Latency:    17.56 ms
+Max Latency:    1911.43 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_LIST_LOCAL ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     5.264 s
+Requests/sec:   189.97
+Mean Latency:   242.96 ms
+Min Latency:    12.96 ms
+Max Latency:    311.45 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_HASH_LOCAL ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     4.551 s
+Requests/sec:   219.71
+Mean Latency:   211.52 ms
+Min Latency:    -503.17 ms
+Max Latency:    537.45 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_MUTEX_LOCAL ---
+Total Requests: 2000
+Concurrency:    800
+Total Time:     8.891 s
+Requests/sec:   224.95
+Mean Latency:   1092.23 ms
+Min Latency:    49.56 ms
+Max Latency:    2963.19 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_RWLOCK_LOCAL ---
+Total Requests: 2000
+Concurrency:    800
+Total Time:     9.355 s
+Requests/sec:   213.78
+Mean Latency:   1183.49 ms
+Min Latency:    15.18 ms
+Max Latency:    3761.31 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_LIST_LOCAL ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     5.315 s
+Requests/sec:   188.15
+Mean Latency:   248.59 ms
+Min Latency:    16.86 ms
+Max Latency:    310.76 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_HASH_LOCAL ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     5.167 s
+Requests/sec:   193.53
+Mean Latency:   240.43 ms
+Min Latency:    17.52 ms
+Max Latency:    290.94 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_MUTEX_LOCAL ---
+Total Requests: 2000
+Concurrency:    1000
+Total Time:     9.642 s
+Requests/sec:   207.43
+Mean Latency:   1138.29 ms
+Min Latency:    22.66 ms
+Max Latency:    2227.35 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_RWLOCK_LOCAL ---
+Total Requests: 2000
+Concurrency:    1000
+Total Time:     9.541 s
+Requests/sec:   209.63
+Mean Latency:   1247.35 ms
+Min Latency:    33.32 ms
+Max Latency:    3381.83 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_MUTEX_LOCAL ---
+Total Requests: 2000
+Concurrency:    1000
+Total Time:     6.987 s
+Requests/sec:   286.25
+Mean Latency:   290.05 ms
+Min Latency:    12.80 ms
+Max Latency:    1220.13 ms
+Failed Requests: 1980
+Errors:         {"ProxyError": 1618, "ReadTimeout": 362}
+
+--- B2_RWLOCK_LOCAL ---
+Total Requests: 2000
+Concurrency:    1000
+Total Time:     3.065 s
+Requests/sec:   652.62
+Mean Latency:   567.44 ms
+Min Latency:    6.74 ms
+Max Latency:    1900.91 ms
+Failed Requests: 1789
+Errors:         {"ProxyError": 1789}

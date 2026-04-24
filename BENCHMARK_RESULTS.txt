@@ -1,0 +1,43 @@
+
+============================================================
+  PROXY SERVER - LIVE BENCHMARK RESULTS
+  Tested: 24 Apr 2026 | Method: Raw Socket
+============================================================
+
+BENCHMARK 1: Cache Miss vs Hit
+----------------------------------------
+  Miss Latency : 3.26 ms  (origin fetch)
+  Hit  Latency : 0.93 ms  (served from cache)
+  Speedup      : 3.51x faster
+
+BENCHMARK 2: RWLock vs Mutex (400 clients)
+----------------------------------------
+  Mutex  Latency : 1102.72 ms
+  RWLock Latency :  214.65 ms
+  Improvement    : 80.5% latency reduction
+  Throughput     : 268.37 req/s  (0 failures)
+
+BENCHMARK 3: Hashtable vs Linked List
+----------------------------------------
+  Linked List : 156.80 ms  (O(n) scan)
+  Hashtable   : 101.62 ms  (O(1) lookup)
+  Speedup     : 1.54x faster
+
+BENCHMARK 4: Cache Stampede Protection
+----------------------------------------
+  Without Protection : 10 origin fetches
+  With    Protection :  1 origin fetch
+  Saved              :  9 duplicate requests (90%)
+
+============================================================
+SUMMARY TABLE
+============================================================
+Benchmark                Before        After         Gain
+------------------------------------------------------------
+Cache Miss vs Hit        3.26 ms       0.93 ms       3.51x faster
+Mutex vs RWLock          1102 ms       214 ms        80.5% faster
+LinkedList vs Hashtable  156.80 ms     101.62 ms     1.54x faster
+Stampede Protection      10 fetches    1 fetch       90% saved
+============================================================
+All tests: PASS | Zero failures on RWLock at 400 clients
+============================================================

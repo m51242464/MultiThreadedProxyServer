@@ -1,0 +1,297 @@
+
+--- BASELINE ---
+Total Requests: 100
+Concurrency:    10
+Total Time:     2.289 s
+Requests/sec:   43.69
+Mean Latency:   224.46 ms
+Min Latency:    31.90 ms
+Max Latency:    1837.49 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B1_MISS ---
+Total Requests: 200
+Concurrency:    1
+Total Time:     3.225 s
+Requests/sec:   62.02
+Mean Latency:   16.05 ms
+Min Latency:    4.38 ms
+Max Latency:    1032.18 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B1_HIT ---
+Total Requests: 200
+Concurrency:    1
+Total Time:     1.364 s
+Requests/sec:   146.65
+Mean Latency:   6.74 ms
+Min Latency:    5.04 ms
+Max Latency:    17.56 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_MUTEX ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     11.111 s
+Requests/sec:   180.00
+Mean Latency:   2018.19 ms
+Min Latency:    498.69 ms
+Max Latency:    3856.84 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_RWLOCK ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     11.627 s
+Requests/sec:   172.02
+Mean Latency:   1988.55 ms
+Min Latency:    650.75 ms
+Max Latency:    3251.40 ms
+Failed Requests: 0
+Errors:         {}
+
+--- BASELINE ---
+Total Requests: 100
+Concurrency:    10
+Total Time:     2.255 s
+Requests/sec:   44.34
+Mean Latency:   222.63 ms
+Min Latency:    30.39 ms
+Max Latency:    1813.59 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B1_MISS ---
+Total Requests: 200
+Concurrency:    1
+Total Time:     3.444 s
+Requests/sec:   58.08
+Mean Latency:   17.15 ms
+Min Latency:    4.54 ms
+Max Latency:    1109.32 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B1_HIT ---
+Total Requests: 200
+Concurrency:    1
+Total Time:     1.320 s
+Requests/sec:   151.53
+Mean Latency:   6.54 ms
+Min Latency:    4.28 ms
+Max Latency:    29.90 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_MUTEX ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     12.239 s
+Requests/sec:   163.42
+Mean Latency:   2156.41 ms
+Min Latency:    858.77 ms
+Max Latency:    4228.26 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_RWLOCK ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     11.928 s
+Requests/sec:   167.67
+Mean Latency:   2054.46 ms
+Min Latency:    798.53 ms
+Max Latency:    3406.98 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_LIST ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     2.720 s
+Requests/sec:   367.66
+Mean Latency:   0.00 ms
+Min Latency:    0.00 ms
+Max Latency:    0.00 ms
+Failed Requests: 1000
+Errors:         {"ProxyError": 1000}
+
+--- B1_MISS ---
+Total Requests: 200
+Concurrency:    1
+Total Time:     3.326 s
+Requests/sec:   60.14
+Mean Latency:   16.56 ms
+Min Latency:    5.25 ms
+Max Latency:    1042.50 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B1_HIT ---
+Total Requests: 200
+Concurrency:    1
+Total Time:     1.320 s
+Requests/sec:   151.46
+Mean Latency:   6.53 ms
+Min Latency:    3.81 ms
+Max Latency:    19.85 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_MUTEX ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     12.240 s
+Requests/sec:   163.40
+Mean Latency:   2144.08 ms
+Min Latency:    571.40 ms
+Max Latency:    3071.27 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_RWLOCK ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     10.305 s
+Requests/sec:   194.08
+Mean Latency:   1769.59 ms
+Min Latency:    414.71 ms
+Max Latency:    2676.57 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_LIST ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     7.768 s
+Requests/sec:   128.73
+Mean Latency:   377.76 ms
+Min Latency:    154.99 ms
+Max Latency:    2356.51 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_HASH ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     6.283 s
+Requests/sec:   159.15
+Mean Latency:   304.08 ms
+Min Latency:    -526.71 ms
+Max Latency:    2116.96 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B4_NO_PROT ---
+Total Requests: 10
+Concurrency:    10
+Total Time:     2.386 s
+Requests/sec:   4.19
+Mean Latency:   2260.19 ms
+Min Latency:    1336.95 ms
+Max Latency:    2381.41 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B4_WITH_PROT ---
+Total Requests: 10
+Concurrency:    10
+Total Time:     2.155 s
+Requests/sec:   4.64
+Mean Latency:   2025.80 ms
+Min Latency:    1108.88 ms
+Max Latency:    2151.56 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B1_MISS ---
+Total Requests: 200
+Concurrency:    1
+Total Time:     3.351 s
+Requests/sec:   59.69
+Mean Latency:   16.69 ms
+Min Latency:    5.52 ms
+Max Latency:    1034.79 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B1_HIT ---
+Total Requests: 200
+Concurrency:    1
+Total Time:     1.316 s
+Requests/sec:   152.02
+Mean Latency:   6.52 ms
+Min Latency:    4.59 ms
+Max Latency:    32.69 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_MUTEX ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     11.319 s
+Requests/sec:   176.69
+Mean Latency:   1969.95 ms
+Min Latency:    537.35 ms
+Max Latency:    3473.68 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B2_RWLOCK ---
+Total Requests: 2000
+Concurrency:    400
+Total Time:     11.844 s
+Requests/sec:   168.86
+Mean Latency:   2010.36 ms
+Min Latency:    524.39 ms
+Max Latency:    3180.19 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_LIST ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     6.521 s
+Requests/sec:   153.35
+Mean Latency:   315.45 ms
+Min Latency:    -526.21 ms
+Max Latency:    2124.38 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B3_HASH ---
+Total Requests: 1000
+Concurrency:    50
+Total Time:     7.311 s
+Requests/sec:   136.77
+Mean Latency:   355.11 ms
+Min Latency:    142.12 ms
+Max Latency:    1967.94 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B4_NO_PROT ---
+Total Requests: 10
+Concurrency:    10
+Total Time:     1.122 s
+Requests/sec:   8.92
+Mean Latency:   1100.43 ms
+Min Latency:    1077.90 ms
+Max Latency:    1115.85 ms
+Failed Requests: 0
+Errors:         {}
+
+--- B4_WITH_PROT ---
+Total Requests: 10
+Concurrency:    10
+Total Time:     2.079 s
+Requests/sec:   4.81
+Mean Latency:   1951.32 ms
+Min Latency:    1036.00 ms
+Max Latency:    2068.49 ms
+Failed Requests: 0
+Errors:         {}
